@@ -1,6 +1,6 @@
 <template>
-  <div class="main-wrap relative w-20 border-radius-full">
-    <h1 class="mx-auto mt-5 bg-blue-200">Tailwind Start</h1>
+  <div class="main-wrap relative w-20 h-20 rounded-full bg-blue-200">
+    
   </div>
 </template>
 
@@ -10,12 +10,12 @@ export default {
   props: {
     bg_color: {
       type: String,
-      required: true
+      required: true,
     },
     icon: {
       type: String,
-      required: true
-    }
+      required: true,
+    },
   },
   data() {
     return {};
