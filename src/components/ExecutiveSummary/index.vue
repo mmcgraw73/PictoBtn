@@ -1,11 +1,35 @@
 <template>
-  <div class="main-wrap flex items-center">
-    <PictoBtn :color="'bg-red-500'" :cls="'pl-7 pt-6'" :icon="icons.exclamation_bulb" />
-    <PictoBtn :color="'bg-green-500'" :cls="'pl-7 pt-6'" :icon="icons.ghost" />
-    <PictoBtn :color="'bg-red-500'" :cls="'pl-5 pt-6'" :icon="icons.hand_dollar" />
-    <PictoBtn :color="'bg-red-500'" :cls="'pl-6 pt-6'" :icon="icons.user_plus" />
-    <PictoBtn :color="'bg-green-500'" :cls="'pl-6 pt-6'" :icon="icons.user_check" />
-    <PictoBtn :color="'bg-red-500'" :cls="'pl-5 pt-6'" :icon="icons.hand_dollar" />
+  <div class="main-wrap grid grid-cols-5 gap-5 bg-gray-200 p-4 rounded h-30">
+    <PictoBtn
+      :color="'bg-red-500'"
+      :cls="'pl-6 pt-6 cursor-pointer'"
+      :icon="icons.user_minus"
+      :details="`${user_minus.static} ${user_minus.response}`"
+    />
+    <PictoBtn
+      :color="'bg-red-500'"
+      :cls="'pl-5 pt-6'"
+      :icon="icons.hand_dollar"
+      :details="`${hand_dollar.static} ${hand_dollar.response}`"
+    />
+    <PictoBtn
+      :color="'bg-green-500'"
+      :cls="'pl-5 pt-6'"
+      :icon="icons.users_rectangle"
+      :details="`${users_rectangle.static} ${users_rectangle.response}`"
+    />
+    <PictoBtn
+      :color="'bg-blue-500'"
+      :cls="'pl-6 pt-6'"
+      :icon="icons.follow_up"
+      :details="`${follow_up.static} ${follow_up.response}%`"
+    />
+    <PictoBtn
+      :color="'bg-green-500'"
+      :cls="'pl-5 pt-6'"
+      :icon="icons.users_add"
+      :details="`${users_add.static} ${users_add.response}`"
+    />
   </div>
 </template>
 
@@ -30,14 +54,33 @@ export default {
   data() {
     return {
       ...icons,
-      color: '',
+      user_minus: {
+        static: 'Customers at risk',
+        response: '47767', // this value will be a computed prop that returns the response value once endpoints are in place
+      },
+      hand_dollar: {
+        static: 'Royalties at risk',
+        response: '47767', // this value will be a computed prop that returns the response value once endpoints are in place
+      },
+      users_rectangle: {
+        static: 'Royalties at risk',
+        response: '47767', // this value will be a computed prop that returns the response value once endpoints are in place
+      },
+      follow_up: {
+        static: 'Follow up rate',
+        response: '13', // this value will be a computed prop that returns the response value once endpoints are in place
+      },
+      users_add: {
+        static: 'Customers acquired',
+        response: '28', // this value will be a computed prop that returns the response value once endpoints are in place
+      },
     };
   },
 };
 </script>
 
-<style scoped
+<style scoped>
 .main-wrap {
-  width: 400px
+  width: 1250px;
 }
 </style>

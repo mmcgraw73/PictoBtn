@@ -1,6 +1,10 @@
 <template>
-  <div :class="['picto-btn relative rounded-full w-20 mr-4', color]">
-    <div :class="['icon-wrap w-20 h-20', cls]" v-html="icon"></div>
+  <div :class="['picto-btn grid grid-cols-2 gap-2 cursor-pointer']">
+    <div
+      :class="['icon-wrap w-20 h-20 rounded-full', cls, color]"
+      v-html="icon"
+    ></div>
+    <p class="text-xs font-bold pt-5">{{ details }}</p>
   </div>
 </template>
 
@@ -19,6 +23,10 @@ export default {
     cls: {
       type: String,
       required: false,
+    },
+    details: {
+      type: String,
+      required: true,
     },
   },
 };
