@@ -22,7 +22,7 @@
       :color="'bg-blue-500'"
       :cls="'pl-6 pt-6'"
       :icon="icons.follow_up"
-      :details="`${follow_up.response} ${follow_up.static} %`"
+      :details="`${follow_up.response}% ${follow_up.static}`"
     />
     <PictoBtn
       :color="'bg-green-500'"
