@@ -4,7 +4,7 @@
       :class="['icon-wrap w-20 h-20 rounded-full', cls, color]"
       v-html="icon"
     ></div>
-    <p class="text-xs font-bold pt-5">{{ details }}</p>
+    <p class="text-xs text-cyan-800 underline font-bold pt-5">{{ details }}</p>
   </div>
 </template>
 
