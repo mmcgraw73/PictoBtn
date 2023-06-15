@@ -1,6 +1,6 @@
 <template>
-  <div class="main-wrap relative w-20 h-20 rounded-full bg-blue-200">
-    
+  <div :class="['picto-btn relative rounded-full w-20 mr-4', color]">
+    <div :class="['icon-wrap w-20 h-20', cls]" v-html="icon"></div>
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
   name: 'PictoBtn',
   props: {
-    bg_color: {
+    color: {
       type: String,
       required: true,
     },
@@ -16,9 +16,10 @@ export default {
       type: String,
       required: true,
     },
-  },
-  data() {
-    return {};
+    cls: {
+      type: String,
+      required: false,
+    },
   },
 };
 </script>
