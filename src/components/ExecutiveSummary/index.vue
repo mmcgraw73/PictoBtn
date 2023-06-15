@@ -4,31 +4,31 @@
       :color="'bg-red-500'"
       :cls="'pl-6 pt-6 cursor-pointer'"
       :icon="icons.user_minus"
-      :details="`${user_minus.static} ${user_minus.response}`"
+      :details="`${user_minus.response} ${user_minus.static} `"
     />
     <PictoBtn
       :color="'bg-red-500'"
       :cls="'pl-5 pt-6'"
       :icon="icons.hand_dollar"
-      :details="`${hand_dollar.static} $${hand_dollar.response}`"
+      :details="`$${hand_dollar.response} ${hand_dollar.static} `"
     />
     <PictoBtn
       :color="'bg-green-500'"
       :cls="'pl-5 pt-6'"
       :icon="icons.users_rectangle"
-      :details="`${users_rectangle.static} ${users_rectangle.response}`"
+      :details="`${users_rectangle.response} ${users_rectangle.static} `"
     />
     <PictoBtn
       :color="'bg-blue-500'"
       :cls="'pl-6 pt-6'"
       :icon="icons.follow_up"
-      :details="`${follow_up.static} ${follow_up.response}%`"
+      :details="`${follow_up.response} ${follow_up.static} %`"
     />
     <PictoBtn
       :color="'bg-green-500'"
       :cls="'pl-5 pt-6'"
       :icon="icons.users_add"
-      :details="`${users_add.static} ${users_add.response}`"
+      :details="`${users_add.response} ${users_add.static} `"
     />
   </div>
 </template>
