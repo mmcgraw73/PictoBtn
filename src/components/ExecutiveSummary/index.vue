@@ -10,7 +10,7 @@
       :color="'bg-red-500'"
       :cls="'pl-5 pt-6'"
       :icon="icons.hand_dollar"
-      :details="`${hand_dollar.static} ${hand_dollar.response}`"
+      :details="`${hand_dollar.static} $${hand_dollar.response}`"
     />
     <PictoBtn
       :color="'bg-green-500'"
@@ -60,11 +60,11 @@ export default {
       },
       hand_dollar: {
         static: 'Royalties at risk',
-        response: '47767', // this value will be a computed prop that returns the response value once endpoints are in place
+        response: '777767', // this value will be a computed prop that returns the response value once endpoints are in place
       },
       users_rectangle: {
-        static: 'Royalties at risk',
-        response: '47767', // this value will be a computed prop that returns the response value once endpoints are in place
+        static: 'Customers retained',
+        response: '744', // this value will be a computed prop that returns the response value once endpoints are in place
       },
       follow_up: {
         static: 'Follow up rate',
