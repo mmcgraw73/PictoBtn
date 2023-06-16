@@ -1,6 +1,6 @@
 <template>
   <div class="picto-btn-wrap relative w-15 h-15">
-    <div class="">
+    <div class="cursor-pointer">
       <div :class="['picto-btn grid grid-cols-3 items-center gap-4 text-sm']">
         <div
           :class="['icon-wrap w-10 h-10 rounded-full pt-2', cls, color]"

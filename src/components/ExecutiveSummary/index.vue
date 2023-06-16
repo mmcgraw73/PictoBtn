@@ -1,14 +1,5 @@
 <template>
-  <div
-    class="
-      main-wrap
-      grid grid-cols-5
-      bg-gray-200
-      rounded
-      items-center
-      
-    "
-  >
+  <div class="main-wrap grid grid-cols-5 bg-gray-200 rounded items-center">
     <PictoBtn
       :color="'bg-red-500'"
       :cls="''"
@@ -80,8 +71,8 @@ export default {
 
 <style scoped>
 .main-wrap {
-  width:  750px;
-  height: 200px;
+  width: 750px;
+  height: 100px;
 }
 svg {
   display: block;
