@@ -1,5 +1,15 @@
 <template>
-  <div class="main-wrap grid grid-cols-5 rounded items-center">
+  <div
+    class="
+      main-wrap
+      grid grid-cols-5
+      bg-gray-700
+      p-3
+      gap-2
+      rounded
+      items-center
+    "
+  >
     <PictoBtn
       :color="'bg-red-500'"
       :cls="''"

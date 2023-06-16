@@ -1,7 +1,7 @@
 <template>
-  <div class="picto-btn-wrap relative bg-gray-800 w-15 h-15 p-2">
+  <div class="picto-btn-wrap relative w-15 h-15">
     <div class="cursor-pointer">
-      <div :class="['picto-btn grid grid-cols-3 items-center gap-8 text-sm']">
+      <div :class="['picto-btn grid grid-cols-3 items-center gap-5 text-sm']">
         <div
           :class="['icon-wrap w-10 h-10 rounded-full pt-2', cls, color]"
           v-html="icon"
