@@ -3,7 +3,7 @@
     <div class="cursor-pointer">
       <div :class="['picto-btn grid grid-cols-3 items-center gap-5 text-sm']">
         <div
-          :class="['icon-wrap w-10 h-10 rounded-full pt-2', cls, color]"
+          :class="['icon-wrap w-10 h-10 rounded-full', cls, color]"
           v-html="icon"
         ></div>
         <p class="text-xxs text-cyan-800 underline font-bold col-span-2">
@@ -44,6 +44,6 @@ export default {
   line-height: 15px;
 }
 .icon-wrap {
-  padding-top: 12px;
+  padding-top: 13px;
 }
 </style>
