@@ -1,32 +1,41 @@
 <template>
-  <div class="main-wrap grid grid-cols-5 gap-5 bg-gray-200 p-4 rounded h-30">
+  <div
+    class="
+      main-wrap
+      grid grid-cols-5
+      bg-gray-200
+      rounded
+      items-center
+      
+    "
+  >
     <PictoBtn
       :color="'bg-red-500'"
-      :cls="'pl-6 pt-6 cursor-pointer'"
+      :cls="''"
       :icon="icons.user_minus"
       :details="`${user_minus.response} ${user_minus.static} `"
     />
     <PictoBtn
       :color="'bg-red-500'"
-      :cls="'pl-5 pt-6'"
+      :cls="''"
       :icon="icons.hand_dollar"
       :details="`$${hand_dollar.response} ${hand_dollar.static} `"
     />
     <PictoBtn
       :color="'bg-green-500'"
-      :cls="'pl-5 pt-6'"
+      :cls="''"
       :icon="icons.users_rectangle"
       :details="`${users_rectangle.response} ${users_rectangle.static} `"
     />
     <PictoBtn
       :color="'bg-blue-500'"
-      :cls="'pl-6 pt-6'"
+      :cls="''"
       :icon="icons.follow_up"
       :details="`${follow_up.response}% ${follow_up.static}`"
     />
     <PictoBtn
       :color="'bg-green-500'"
-      :cls="'pl-5 pt-6'"
+      :cls="''"
       :icon="icons.users_add"
       :details="`${users_add.response} ${users_add.static} `"
     />
@@ -40,16 +49,6 @@ export default {
   name: 'ExecutiveSummary',
   components: {
     PictoBtn,
-  },
-  props: {
-    bg_color: {
-      type: String,
-      required: true,
-    },
-    icon: {
-      type: String,
-      required: true,
-    },
   },
   data() {
     return {
@@ -81,6 +80,11 @@ export default {
 
 <style scoped>
 .main-wrap {
-  width: 1250px;
+  width:  750px;
+  height: 200px;
+}
+svg {
+  display: block;
+  margin: auto;
 }
 </style>
