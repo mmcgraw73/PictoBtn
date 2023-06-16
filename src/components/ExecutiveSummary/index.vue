@@ -3,7 +3,7 @@
     class="
       main-wrap
       grid grid-cols-5
-      bg-gray-700
+      bg-gray-300
       p-3
       gap-2
       rounded
